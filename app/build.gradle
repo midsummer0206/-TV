@@ -13,8 +13,8 @@ android {
         minSdk 21
         //noinspection ExpiredTargetSdkVersion
         targetSdk 28
-        versionCode 245
-        versionName "2.4.5"
+        versionCode 20240803
+        versionName "20240803"
         javaCompileOptions {
             annotationProcessorOptions {
                 arguments = ["room.schemaLocation": "$projectDir/schemas".toString()]
@@ -101,6 +101,7 @@ dependencies {
     implementation project(':tvbus')
     implementation project(':catvod')
     implementation project(':quickjs')
+    pythonImplementation project(':pyramid')
     implementation project(':thunder')
     implementation project(':youtube')
     implementation project(':jianpian')

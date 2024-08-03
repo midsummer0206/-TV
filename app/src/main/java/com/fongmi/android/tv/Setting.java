@@ -495,7 +495,7 @@ public class Setting {
     }
 
     public static boolean isHomeHistory() {
-        return Prefers.getBoolean("home_history", true);
+        return Prefers.getBoolean("home_history", false);
     }
 
     public static void putHomeHistory(boolean show) {

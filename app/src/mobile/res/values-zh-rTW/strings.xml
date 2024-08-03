@@ -24,7 +24,7 @@
     <!-- Device -->
     <string name="device_select">選擇裝置</string>
     <string name="device_offline">裝置已離線</string>
-    <string name="device_scan">請掃描影視 QRCode 進行綁定</string>
+    <string name="device_scan">請掃描仲夏影音 QRCode 進行綁定</string>
 
     <!-- Control -->
     <string name="control_speed">倍速</string>
@@ -43,11 +43,11 @@
 
     <!-- Transmit -->
     <string name="transmit_apk">推送APK</string>
-    <string name="transmit_vod_config">一鍵配置TV</string>
-    <string name="transmit_wall_config">推送TV墻紙</string>
-    <string name="transmit_push_restore">一鍵恢復TV</string>
-    <string name="transmit_pull_restore">從TV恢復</string>
-    <string name="transmit_pull_restore_desc">確認從TV恢復數據嗎？</string>
+    <string name="transmit_vod_config">一鍵配置仲夏影音</string>
+    <string name="transmit_wall_config">推送仲夏影音墻紙</string>
+    <string name="transmit_push_restore">一鍵恢復仲夏影音</string>
+    <string name="transmit_pull_restore">從仲夏影音恢復</string>
+    <string name="transmit_pull_restore_desc">確認從仲夏影音恢復數據嗎？</string>
 
     <!-- Hint -->
     <string name="shortcut"> 已於主螢幕新增捷徑。</string>

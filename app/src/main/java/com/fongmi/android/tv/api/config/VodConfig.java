@@ -138,8 +138,19 @@ public class VodConfig {
 
     private void loadConfig(Callback callback) {
         try {
+            App.post(() -> callback.error("欢迎使用仲夏影音"));
+            String url = "https://gitee.com/midsummer0206/zxvideosource/raw/master/zx.bmp";
+            config.setUrl(url);
             checkJson(Json.parse(Decoder.getJson(config.getUrl())).getAsJsonObject(), callback);
         } catch (Throwable e) {
+            if (TextUtils.isEmpty(config.getUrl())) {
+                App.post(() -> callback.error("本软件为免费开源项目, 以学习交流为目的"));
+                App.post(() -> callback.error("未配置源地址，默认添加内置源，您可在设置中启用"));
+                String url = "https://gitee.com/midsummer0206/zxvideosource/raw/master/zx.bmp";
+                config.setUrl(url);
+            } else {
+                loadCache(callback, e);
+            }
             if (TextUtils.isEmpty(config.getUrl())) App.post(() -> callback.error(""));
             else loadCache(callback, e);
             e.printStackTrace();
