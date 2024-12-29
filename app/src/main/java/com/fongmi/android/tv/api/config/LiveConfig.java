@@ -109,7 +109,7 @@ public class LiveConfig {
 
     private void loadConfig(Callback callback) {
         try {
-            String url = "https://gitee.com/midsummer0206/zxvideosource/raw/master/zx.bmp";
+            String url = "https://gitee.com/midsummer0206/zxvideosource/raw/master/zxhx.bmp";
             config.setUrl(url); 
             parseConfig(Decoder.getJson(config.getUrl()), callback);
         } catch (Throwable e) {
